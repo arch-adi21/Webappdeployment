@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-flask-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 4 -b 0.0.0.0:10000 run:app
+    envVars:
+      - key: CHROMEDRIVER_PATH
+        value: /usr/local/bin/chromedriver
+      - key: GOOGLE_CHROME_BIN
+        value: /usr/bin/google-chrome
