@@ -134,7 +134,4 @@ def announcements():
       cleaned_text = cleaned_text.replace("\xa0", " ")
       list1.append(cleaned_text)
     return jsonify(list1), 200
-
-if __name__ == '__main__':
-    app.run()
     
