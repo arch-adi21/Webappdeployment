@@ -14,7 +14,6 @@ from bs4 import BeautifulSoup as bs
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.select import Select
 import re
-import pandas as pd
 from selenium.webdriver.support import expected_conditions as EC
 import os
 from datetime import date
